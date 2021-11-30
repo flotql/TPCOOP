@@ -6,6 +6,8 @@
     --side-color2: #C0C0C0;
     
     --accent-color: #337AB7;
+
+    --font-size-accent: 5em;
 }
 
 *{
@@ -19,7 +21,7 @@ body{
     
     
     max-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     background-color: var(--main-color2);
 }
 
@@ -34,7 +36,8 @@ iframe{
 
 h1{
     color: var(--accent-color);
-    text-align: center  ;
+    text-align: center;
+    font-size: var(--font-size-accent);
 }
 
 h2{
@@ -120,6 +123,7 @@ fieldset {
     margin-top: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    
 }
 
 h3{
@@ -170,17 +174,19 @@ Attention que les .class sous ce commentaire !
     
 }
 
-.img_link img{
-    max-width: 70%;
-    max-height: 50%;
-}
-
 .img_link{
     display: flex;
-    flex-direction: row;
     justify-content: center;
 
     padding: 10px;
+
+    border: solid 1em var(--accent-color);
+    border-radius: 3em;
+}
+
+.img_link img{
+    max-width: 70%;
+    max-height: 50%;
 }
 
 /* 
@@ -228,9 +234,9 @@ Attention que les @media sous ce commentaire !
     }
 
     .img_link{
-        background-color: var(--side-color1);
-        max-height: 300px;
-        max-width: 80%;
+        background-color: var(--side-color2);
+        height: 300px;
+        width: 80%;
     }
     
 }
