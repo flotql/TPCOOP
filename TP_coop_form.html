@@ -7,69 +7,62 @@
 </head>
 <body>
     <form>
-      <fieldset>Veuillez remplir le formulaire ci-dessous
+      <fieldset>Nous contacter ?
+
         <div id="num1">
-          <label for="prenom">Prenom:</label>
-          <input type="text" id="name" name="Prénom" placeholder="Ex: Eric">
+          <label for="nom">Nom:</label>
+          <input type="text" id="name" name="nom" placeholder="Votre nom">
         </div>
       
         <div id="num2">
-          <label for="nom">Nom:</label>
-          <input type="text" id="nom" name="Nom" placeholder="Ex: Lafon">
-        </div>
-      
-        <div id="num3">
-          <label for="mail">Email:</label>
-          <input type="text" id="mail" name="Mail" placeholder="Ex: DarkEric31@aol.fr">
+          <label for="prenom">Prénom:</label>
+          <input type="text" id="firstname" name="prénom" placeholder="Votre prénom">
         </div>
 
         <div id="num4">
-            <label for="mot de passe">Mot de passe:</label>
-            <input type="text" id="mdp" name="Mdp" placeholder="Ex: RocketLeague123" 
-            minlength="8" maxlength="30">
-          </div>
+          <label for="mail">Email:</label>
+          <input type="text" id="mail" name="Mail" placeholder="Votre e-mail">
+        </div>
+
 
         <div id="num5">
             <label for="age">Age:</label>
-            <input type="text" id="age" name="Age" placeholder="Ex: 45" minlength="2" 
+            <input type="text" id="age" name="Age" placeholder="Votre âge" minlength="2" 
             maxlength="2">
         </div>
       
-        <div id="num4">
+        <div id="num6">
           <label for="submit">Numéro de téléphone:</label>
-          <input type="text" id="tel" name="Telephone" placeholder="Ex: 06 06 06 06 06" 
+          <input type="text" id="tel" name="Telephone" placeholder="Votre numéro de téléphone" 
           minlength="8" maxlength="10">
         </div>
-        <textarea placeholder="Rocket League trop b1 !" rows="10" cols="90"></textarea>
-        <div>
-            <input type="date"/>
+
+        <div id="num7">
+          <p>Insérer votre CV</p>
+          <input type="file" accept=".doc, .pdf, .html" multiple/>
         </div>
+
+        <textarea placeholder="Votre demande et/ou commentaire" rows="10" cols="90"></textarea>
+
         <div>
-            <input type="file" accept=".jpeg, .gif, .png, .jpg" multiple/>
+          <p>Date de votre demande:</p>
+          <input type="date"/>
         </div>
-        <div>
-            <label for="v1">Ban Eric</label>
-            <input type="radio" id="v1" name="bannir"/>
-            <label for="v2">Garder Eric</label>
-            <input type="radio" id="v2" name="bannir" checked/>
+        <div id="newsletter">
+        <p>S'inscrire à la newsletter ?</p>
+            <input type="radio" id="v1" name="yes" value="1"/>
+            <label for="v1">Accepter</label>
+            <input type="radio" id="v2" name="no" value="2"/>
+            <label for="v2">Refuser</label>
         </div>
-      </fieldset>
+      <fieldset>
         <div>
-      <fieldset>Pourquoi ?
-          <form method="post" action="exercice_form.html">
-            <input type="checkbox" id="choix2x">
-              <option value="a">Il est has-been</option>
-              <option value="b">Il est écrivrain</option>
-          </form>
-      </fieldset>
-        </div>
-        <div>
-          <fieldset>Précision ?
+          <p>Comment vous nous avez connu ?</p>
               <select id="choix"> 
-                <option value="1">Choix 1</option>
-                <option value="2">Choix 2</option>
-                <option value="3">Choix 3</option>
-                <option value="4">Choix 4</option>
+                <option value="1">Réseaux sociaux</option>
+                <option value="2">Via une connaissance</option>
+                <option value="3">Via la publicité</option>
+                <option value="4">Via les portes ouvertes et salons</option>
              </select>
           </fieldset>
           <form method="post" action="exercice_form.html">
