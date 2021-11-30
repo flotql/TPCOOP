@@ -52,9 +52,11 @@ header h1{
     order: -1;
 }
 
-header img{
-    align-self: flex-start;
+header div{
+    display: flex;
+    flex-direction: row;
 }
+
 
 nav{
     text-align: center;
