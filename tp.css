@@ -47,19 +47,26 @@ header{
     color: var(--main-color2);
 }
 
-header h1{
-    order: -1;
+ header h1{
+    /* order: -1; */
     align-self: center;
 }
 
-header div{
+/*header div{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+}
+
+header div img{
+    align-self: flex-start;
 }
 
 header div nav{
     align-self: center;
-}
+} */
+
 /* Partie Nav */
 nav{
     text-align: center;
@@ -98,7 +105,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
