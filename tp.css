@@ -108,8 +108,8 @@ footer{
     
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    
+    position: absolute;
+    bottom: 0;    
     width: 100%;
 }
 
