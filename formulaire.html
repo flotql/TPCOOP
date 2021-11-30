@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <link href="styles/style_form.css" rel="stylesheet" type="text/css">
+    <title>formulaire.html</title>
+</head>
+<body>
+    <form>
+      <fieldset>Nous contacter ?
+
+        <div id="num1">
+          <label for="nom">Nom:</label>
+          <input type="text" id="name" name="nom" placeholder="Votre nom">
+        </div>
+      
+        <div id="num2">
+          <label for="prenom">Prénom:</label>
+          <input type="text" id="firstname" name="prénom" placeholder="Votre prénom">
+        </div>
+
+        <div id="num4">
+          <label for="mail">Email:</label>
+          <input type="text" id="mail" name="Mail" placeholder="Votre e-mail">
+        </div>
+
+
+        <div id="num5">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="Age" placeholder="Votre âge" minlength="2" 
+            maxlength="2">
+        </div>
+      
+        <div id="num6">
+          <label for="submit">Numéro de téléphone:</label>
+          <input type="text" id="tel" name="Telephone" placeholder="Votre numéro de téléphone" 
+          minlength="8" maxlength="10">
+        </div>
+
+        <div id="num7">
+          <p>Insérer votre CV</p>
+          <input type="file" accept=".doc, .pdf, .html" multiple/>
+        </div>
+
+        <textarea placeholder="Votre demande et/ou commentaire" rows="10" cols="90"></textarea>
+
+        <div>
+          <p>Date de votre demande:</p>
+          <input type="date"/>
+        </div>
+        <div id="newsletter">
+        <p>S'inscrire à la newsletter ?</p>
+            <input type="radio" id="v1" name="yes" value="1"/>
+            <label for="v1">Accepter</label>
+            <input type="radio" id="v2" name="no" value="2"/>
+            <label for="v2">Refuser</label>
+        </div>
+      <fieldset>
+        <div>
+          <p>Comment vous nous avez connu ?</p>
+              <select id="choix"> 
+                <option value="1">Réseaux sociaux</option>
+                <option value="2">Via une connaissance</option>
+                <option value="3">Via la publicité</option>
+                <option value="4">Via les portes ouvertes et salons</option>
+             </select>
+          </fieldset>
+          <form method="post" action="exercice_form.html">
+            <input type="submit" value="Envoyer"/>
+          </form>
+          <form method="post" action="exercice_form.html">
+            <input type="submit" value="Annuler"/>
+          </form>
+        </div>
+        </form>
+</body>
