@@ -33,7 +33,8 @@ iframe{
 }
 
 h1{
-    color: var(--main-color2);
+    color: var(--accent-color);
+    text-align: center  ;
 }
 
 h2{
