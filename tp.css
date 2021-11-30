@@ -6,8 +6,8 @@
     --side-color2: #C0C0C0;
     
     --accent-color: #337AB7;
-
-    --font-size-accent: 5em;
+    --font-size-normal:3em;   /* H2 */
+    --font-size-accent: 5em;  /* H1 */
 }
 
 *{
@@ -55,6 +55,7 @@ header img{
     max-height: 100px;
 }
 
+
 /* Partie Nav */
 nav{
     text-align: center;
@@ -91,11 +92,7 @@ nav ul li a:hover{
 
 /* Formulaire */
 fieldset {
-    background-color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin:20px;
     
 }
 
@@ -127,9 +124,10 @@ textarea{
     margin-top: 10px;
 }
 
-iframe{
-    margin-left: 600px;
+form + div iframe{
+    
 }
+
 
 
 
@@ -172,6 +170,19 @@ footer{
 
 .img_link:hover{
     background-color: var(--accent-color);
+}
+
+/* 
+**********************************************
+Attention que les ID sous ce commentaire !
+**********************************************
+*/
+
+
+#container div{
+    border: solid 2px #333333;
+    width: 30%;
+    height: ;
 }
 
 /* 
