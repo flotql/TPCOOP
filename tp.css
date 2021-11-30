@@ -69,36 +69,33 @@ nav{
     text-align: center;
     font-size: 24px;
     width: 100%;
-    height: 10%;
-}
-
-li:hover{
-    text-align: var(--accent-color);
+    height: 50px;
 }
 
 nav ul{
     list-style-type: none;
-    padding: 2px;
 }
 
 nav ul li{
-    font-size: 24;
-    display: inline;
+    font-size: var(--font-size-normal);
+    display: inline ;
     position: relative;
-    
-    flex: 1;
-    padding: 2px;
+    transition: all .5s;
+    margin-left: 25px;
+    margin-right: 25px;
 
 }
 
 nav ul li a{
-    margin-right: 20px;
+
     text-decoration: none;
     color:#C0C0C0;
 }
 
-nav ul li a:hover{
-    font-size: 26px;
+nav ul li:hover{
+    font-size: 1.9em;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 /* Formulaire */
