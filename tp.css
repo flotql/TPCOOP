@@ -67,6 +67,9 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* form{
@@ -87,8 +90,10 @@ Attention que les .class sous ce commentaire !
 
 .container{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    
 }
-
 
 .img_link img{
     max-width: 100px;
@@ -131,7 +136,8 @@ Attention que les @media sous ce commentaire !
     .container{
         grid-template-columns: 1fr;
         justify-items: center;
-        
+           
     }
-    header
+    
+    
 }
