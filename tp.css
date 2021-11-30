@@ -191,7 +191,8 @@ Attention que les ID sous ce commentaire !
 #container div{
     border: solid 2px #333333;
     width: 30%;
-    height: ;
+    height:10%;
+    margin-bottom: 10px;
 }
 
 /* 
