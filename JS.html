@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="icon" href="">
         <link rel="stylesheet" href="tp.css">
-        <title>titre</title>
+        <title>JS</title>
     </head>
     <body>
 <!-- HEADER -->
@@ -12,20 +12,29 @@
             <img src="./IMG/BannerJS.jpg" alt="JavaScript">
             <h1>JavaScript</h1>
         </header>
-<!-- Article -->
+<!-- CONTAINER -->
         <div id="container">
-            <div>
                 <h2>Présentation</h2>
+                <div><iframe width="1271" height="715" src="https://www.youtube.com/embed/EeGWIJgAi70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <p>
-                    JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué. C'est la troisième couche des technologies standards du web, les deux premières (HTML et CSS) étant couvertes bien plus en détail dans d'autres tutoriels sur MDN.
+                    JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué.
                 </p>
-            </div>
-            <div>
-                <h2></h2>
+                <h2>Comment fonctionne JavaScript</h2>
+                <img src="./IMG/JSimg2pg.png" alt="imgJS">
                 <p>
-
+                    Javascript fonctionne à l'aide de Variables (myVariable = 'Bob';), d'opérateurs (+,=,...), fonctions (let myVariable = document.querySelector('h1');)
                 </p>
-            </div>
+                <h2>Exemple</h2>
+                <p>                  
+                    <h3>What Can JavaScript Do?</h3>                    
+                    <p id="demo">JavaScript can change the style of an HTML element.</p>                    
+                    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>                
+                </p>
+                <p>
+                    <h3>What else?</h3>
+                    <p id="demo2">JavaScript can change HTML content.</p>
+                    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+                </p>    
         </div>
         <footer>
             <button><a href="https://www.adrar-formation.com/mentions-legales">Mentions légales</a></button>

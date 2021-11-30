@@ -32,3 +32,61 @@ header{
     background-color: var(--main-color1);
     color: var(--main-color2);
 }
+
+/* nav{
+    config de base le reste dans la classe .menu
+} */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* form{
+    Formulaire de Val
+} */
+
+/*
+**********************************************
+Attention que les .class sous ce commentaire !
+**********************************************
+*/
+
+/*
+.menu{
+}
+*/
+
+/* 
+.container{
+
+}
+*/
+
+.img_link img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.img_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+/* 
+**********************************************
+Attention que les @media sous ce commentaire !
+**********************************************
+*/
+
+@media screen and (width < 1000px){
+
+}
+
+@media screen an (width < 900px){
+
+}
