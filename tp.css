@@ -34,20 +34,33 @@ header{
 }
 
 /* nav{
-
+    config de base le reste dans la classe .menu
 } */
 
-/* .container{
-
-}
-
-footer{
+/*footer{
 
 } */
 
 /* form{
-
+    Formulaire de Val
 } */
+
+/*
+**********************************************
+Attention que les .class sous ce commentaire !
+**********************************************
+*/
+
+/*
+.menu{
+}
+*/
+
+/* 
+.container{
+
+}
+*/
 
 .img_link img{
     max-width: 100px;
@@ -61,11 +74,13 @@ footer{
 
     padding: 10px;
 }
+
 /* 
 **********************************************
 Attention que les @media sous ce commentaire !
 **********************************************
 */
+
 @media screen and (width < 1000px){
 
 }
