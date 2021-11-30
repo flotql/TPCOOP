@@ -105,7 +105,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
