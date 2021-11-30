@@ -6,8 +6,8 @@
     --side-color2: #C0C0C0;
     
     --accent-color: #337AB7;
-    --font-size-normal:1.8em;   /* H2 */
-    --font-size-accent: 5em;  /* H1 */
+    --font-size-normal:1.8em;   /* h2 */
+    --font-size-accent: 5em;  /* h1 */
 }
 
 *{
@@ -78,7 +78,7 @@ nav ul{
 
 nav ul li{
     font-size: var(--font-size-normal);
-    display: inline ;
+    display: inline;
     position: relative;
     transition: all .5s;
     margin-left: 25px;
@@ -132,7 +132,7 @@ textarea{
 }
 
 form + div iframe{
-    list-style-position: outside;
+    /* à aligner */
 }
 
 
@@ -188,7 +188,7 @@ Attention que les ID sous ce commentaire !
 #container div{
     border: solid 2px #333333;
     width: 30%;
-    height:10%;
+    height: 10%;
     margin-bottom: 10px;
 }
 
