@@ -55,6 +55,12 @@ header h1{
 header div{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+}
+
+header div img{
+    align-self: flex-start;
 }
 
 header div nav{
