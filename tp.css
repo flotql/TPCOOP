@@ -47,19 +47,19 @@ header{
     color: var(--main-color2);
 }
 
-header h1{
-    order: -1;
+ header h1{
+    /* order: -1; */
     align-self: center;
 }
 
-header div{
+/*header div{
     display: flex;
     flex-direction: row;
 }
 
 header div nav{
     align-self: center;
-}
+} */
 
 nav{
     text-align: center;
