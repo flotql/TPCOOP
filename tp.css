@@ -33,7 +33,7 @@ iframe{
 }
 
 h1{
-    color: var(--main-color1);
+    color: var(--main-color2);
 }
 
 h2{
@@ -108,11 +108,7 @@ Attention que les .class sous ce commentaire !
 Attention que les @media sous ce commentaire !
 **********************************************
 */
-@media screen and (width < 1200){
-    h1{
-        color: yellow;
-    }
-}
+
 @media screen and (width < 1000px){
     h1{
         color: red;
