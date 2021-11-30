@@ -55,22 +55,6 @@ header img{
     max-height: 100px;
 }
 
-
-/*header div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-header div img{
-    align-self: flex-start;
-}
-
-header div nav{
-    align-self: center;
-} */
-
 /* Partie Nav */
 nav{
     text-align: center;
@@ -110,7 +94,7 @@ fieldset {
     background-color: #FFFFFF;
     margin-left: 20px;
     margin-top: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 20px;
     
 }
@@ -134,8 +118,8 @@ p{
 }
 
 textarea{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 90%;
+    margin:0;
 }
 
 #ok1, #ok2{
