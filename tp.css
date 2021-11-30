@@ -47,6 +47,8 @@ h2{
 header{
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
     background-color: var(--main-color1);
     color: var(--main-color2);
 }
@@ -106,16 +108,6 @@ nav ul li a:hover{
     font-size: 26px;
 }
 
-footer{
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    
-    width: 100%;
-}
-
 /* Formulaire */
 fieldset {
     background-color: #FFFFFF;
@@ -157,6 +149,16 @@ textarea{
 iframe{
     margin-left: 600px;
 }
+footer{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+    width: 100%;
+}
+
 /*
 **********************************************
 Attention que les .class sous ce commentaire !
@@ -164,8 +166,6 @@ Attention que les .class sous ce commentaire !
 .menu{
 }
 */
-
-
 
 .container{
     display: grid;
@@ -182,11 +182,6 @@ Attention que les .class sous ce commentaire !
 
     border: solid 1em var(--accent-color);
     border-radius: 3em;
-}
-
-.img_link img{
-    max-width: 70%;
-    max-height: 50%;
 }
 
 /* 
