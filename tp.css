@@ -81,6 +81,7 @@ nav ul{
 
 nav ul li{
     position: relative;
+    display: inline;
     flex: 1;
     padding: 2px;
 }
