@@ -33,9 +33,22 @@ header{
     color: var(--main-color2);
 }
 
-/* nav{
-    config de base le reste dans la classe .menu
-} */
+nav{
+    text-align: center;
+}
+
+li:hover{
+    background-color: var(--accent-color);
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    position: relative;
+    flex: 1;
+}
 
 footer{
     display: flex;
