@@ -15,9 +15,21 @@
 }
 
 body{
+    
+    
+    
     max-width: 100%;
     max-height: 100%;
     background-color: var(--main-color2);
+}
+
+body img{
+    max-width: 200px;
+}
+
+iframe{
+    max-width: 640px;
+    max-height: 360px;
 }
 
 h1{
@@ -29,6 +41,7 @@ h2{
 }
 
 header{
+    display: flex;
     background-color: var(--main-color1);
     color: var(--main-color2);
 }
@@ -71,11 +84,11 @@ Attention que les .class sous ce commentaire !
 }
 */
 
-/* 
-.container{
 
+.container{
+    display: grid;
 }
-*/
+
 
 .img_link img{
     max-width: 100px;
@@ -95,11 +108,34 @@ Attention que les .class sous ce commentaire !
 Attention que les @media sous ce commentaire !
 **********************************************
 */
-
+@media screen and (width < 1200){
+    h1{
+        color: yellow;
+    }
+}
 @media screen and (width < 1000px){
+    h1{
+        color: red;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
 
+    }
+
+    h2{
+        grid-column: 1 / span(2);
+    }
+    
 }
 
-@media screen an (width < 900px){
-
+@media screen and (width < 900px){
+    h1{
+        color: green;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+    }
+    header
 }
