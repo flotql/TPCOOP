@@ -6,7 +6,7 @@
     --side-color2: #C0C0C0;
     
     --accent-color: #337AB7;
-    --font-size-normal:3em;   /* H2 */
+    --font-size-normal:1.8em;   /* H2 */
     --font-size-accent: 5em;  /* H1 */
 }
 
@@ -39,6 +39,7 @@ h1{
 
 h2{
     color: var(--side-color1);
+    font-size: var(--font-size-normal);
 }
 
 header{
@@ -51,6 +52,7 @@ header{
     
 }
 
+/* LOGO */
 header img{
     display: flex;
     position: sticky;
@@ -105,9 +107,8 @@ fieldset {
     
 }
 
-h3{
+fieldset h2{
     text-align: center;
-    font-size: 24px;
     margin-bottom: 60px;
 }
 
@@ -134,7 +135,7 @@ textarea{
 }
 
 form + div iframe{
-    
+    list-style-position: outside;
 }
 
 
@@ -144,8 +145,6 @@ form + div iframe{
 **********************************************
 Attention que les .class sous ce commentaire !
 **********************************************
-.menu{
-}
 */
 
 footer{
@@ -164,6 +163,7 @@ footer{
     
 }
 
+/* LIEN PAGE D'ACCUEIL */
 .img_link{
     display: flex;
     justify-content: center;
