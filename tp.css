@@ -45,6 +45,10 @@ footer{
 
 } */
 
+/* form{
+
+} */
+
 .img_link img{
     max-width: 100px;
     max-height: 100px;
@@ -56,4 +60,16 @@ footer{
     justify-content: center;
 
     padding: 10px;
+}
+/* 
+**********************************************
+Attention que les @media sous ce commentaire !
+**********************************************
+*/
+@media screen and (width < 1000px){
+
+}
+
+@media screen an (width < 900px){
+
 }
