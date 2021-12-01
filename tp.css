@@ -69,6 +69,14 @@ h2{
     font-size: var(--font-size-normal);
 }
 
+p{
+    margin-bottom: 10px;
+}
+
+div{
+    padding: 5px;
+}
+
 header{
     display: flex;
     flex-direction: raw;
@@ -148,16 +156,8 @@ fieldset h2{
     margin-bottom: 60px;
 }
 
-div{
-    padding: 5px;
-}
-
 label{
     padding: 10px;
-}
-
-p{
-    margin-bottom: 10px;
 }
 
 textarea{
@@ -170,8 +170,9 @@ textarea{
     margin-top: 10px;
 }
 
-form + div iframe{
-    /* à aligner */
+form div iframe{
+    display: flex;
+    margin: auto;
 }
 
 /*
