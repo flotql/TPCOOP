@@ -156,10 +156,7 @@ nav ul li a{
 
 /* Effet zoom au passage de la souris sur le menu*/
 nav ul li:hover{
-    transform: scale(1.4);
-
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: var(--font-size-normal);
 }
 
 /*
@@ -319,6 +316,11 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
         font-size: var(--font-size-small);
     }
 
+    nav ul li:hover{
+        font-size: var(--font-size-normal);
+    }
+    
+
     iframe{
         max-width: 100%;
         max-height: 80%;        
@@ -355,6 +357,11 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
     nav ul li{
         font-size: var(--font-size-normal);
     }
+
+    nav ul li:hover{
+        font-size: 2.5em;
+    }
+    
 
     iframe{
         width: 100%;      
