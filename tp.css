@@ -170,9 +170,9 @@ textarea{
     margin-top: 10px;
 }
 
-form div iframe{
+fieldset + div iframe{
     display: flex;
-    margin: auto;
+    margin:auto
 }
 
 /*
@@ -311,6 +311,10 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
         'three four four'
         'five six seven'
         'height nine ten';
+    }
+
+    nav h2{
+        font-size: var(--font-size-small);
     }
 
     /* config @media grid index */
