@@ -99,6 +99,12 @@ header{
     height: 75px;
 }
 
+.img_bg{
+    border: solid 2px var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--side-color2);
+}
+
 /*
 **********************************************
 Attention, partie header sous ce commentaire !
