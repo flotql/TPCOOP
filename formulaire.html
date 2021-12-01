@@ -1,103 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head lang="en">
     <meta charset=utf-8/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" href="./IMG/logoadrar.png">
     <link href="tp.css" rel="stylesheet" type="text/css">
     <title>Contact</title>
-</head>
-<body>
-<header>
-  <img src="./IMG/logoadrar.png" alt="Contact" width="500px" height="175px">
-  <nav>
-    <ul>
-        <li id="m1"><a href="./index.html">Accueil</a></li>
-        <li id="m2"><a href="./HTML.html">HTML</a></li>
-        <li id="m3"><a href="./CSS.html">CSS</a></li>
-        <li id="m4"><a href="./JS.html">JS</a></li>
-        <li id="m5"><a href="./API.html">API</a></li>
-        <li id="m6"><a href="./formulaire.html">Contact</a></li>
-    </ul>
-</nav>
-</header>
+  </head>
 
-    <form>
-      <fieldset>
+  <body>
+    <header>
+      <img src="./IMG/logoadrar.png" alt="Contact" width="500px" height="175px">
+      <nav>
+        <ul>
+          <li id="m1"><a href="./index.html">Accueil</a></li>
+          <li id="m2"><a href="./HTML.html">HTML</a></li>
+          <li id="m3"><a href="./CSS.html">CSS</a></li>
+          <li id="m4"><a href="./JS.html">JS</a></li>
+          <li id="m5"><a href="./API.html">API</a></li>
+          <li id="m6"><a href="./formulaire.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <fieldset>
+      <form>
         <h2>Nous contacter ?</h2>
-          <div id="num1">
-            <label for="nom">Nom:</label>
-            <input type="text" id="name" name="nom" placeholder="Votre nom">
-          </div>
+        <div id="num1">
+          <label for="nom">Nom:</label>
+          <input type="text" id="name" name="nom" placeholder="Votre nom">
+        </div>
         
-          <div id="num2">
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="firstname" name="prénom" placeholder="Votre prénom">
-          </div>
-
-          <div id="num4">
-            <label for="mail">Email:</label>
-            <input type="text" id="mail" name="Mail" placeholder="Votre e-mail">
-          </div>
-
-
-          <div id="num5">
-              <label for="age">Age:</label>
-              <input type="text" id="age" name="Age" placeholder="Votre âge" minlength="2" 
-              maxlength="2">
-          </div>
-        
-          <div id="num6">
-            <label for="submit">Numéro de téléphone:</label>
-            <input type="text" id="tel" name="Telephone" placeholder="Votre numéro de téléphone" 
-            minlength="8" maxlength="10">
-          </div>
-
-          <div id="num7">
-            <label for="Insérer votre CV">Insérer votre CV</label>
-            <input type="file" accept=".doc, .pdf, .html" multiple/>
-          </div>
-
-          <textarea placeholder="Votre demande et/ou commentaire" rows="10" cols="282"></textarea>
-
-          <div>
-            <label for="Date de votre demande:">Date de votre demande:</label>
-            <input type="date"/>
-          </div>
-          <div id="newsletter">
-          <label for="S'inscrire à la newsletter ?">S'inscrire à la newsletter ?</label>
-              <input type="radio" id="v1" name="yes" value="1"/>
-              <label for="v1">Accepter</label>
-              <input type="radio" id="v2" name="no" value="2"/>
-              <label for="v2">Refuser</label>
-          </div>
-        <fieldset>
-          <div>
-            <label for="Comment vous nous avez connu ?">Comment vous nous avez connu ?</label>
-                <select id="choix"> 
-                  <option value="1">Réseaux sociaux</option>
-                  <option value="2">Via une connaissance</option>
-                  <option value="3">Via la publicité</option>
-                  <option value="4">Via les portes ouvertes et salons</option>
-              </select>
-            </fieldset>
-            <form method="post" action="exercice_form.html">
-              <input type="submit" value="Envoyer" id="ok1"/>
-            </form>
-            <form method="post" action="exercice_form.html">
-              <input type="submit" value="Annuler" id="ok2"/>
-            </form>
-          </div>
-        </form>
-        <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9726.180481682783!2d1.4916711167379777!3d43.552155127134135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdd63de81871%3A0x6c14cda58609eb63!2sADRAR%20Formation%20-%20P%C3%B4le%20NUMERIQUE!5e0!3m2!1sfr!2sfr!4v1638282944150!5m2!1sfr!2sfr" 
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
+        <div id="num2">
+          <label for="prenom">Prénom:</label>
+          <input type="text" id="firstname" name="prénom" placeholder="Votre prénom">
         </div>
 
-<footer>
-  <button><a href="https://www.adrar-formation.com/mentions-legales">Mentions légales</a></button>
-  <button><a href="https://www.adrar-formation.com/politique-de-protection-des-donnees">Vie privée</a></button>
-  <button><a href="https://www.adrar-formation.com/content/conditions-g%C3%A9n%C3%A9rales-de-vente">Conditions Générales de Vente</a></button>
-  <button><a href="https://www.adrar-formation.com/content/nos-engagements-notre-politique-nos-objectifs-et-nos-indicateurs-pour-r%C3%A9ussir">Engagements, Politique, Objectifs, Indicateurs pour Réussir</a></button>
-</footer>
-</body>
+        <div id="num4">
+          <label for="mail">Email:</label>
+          <input type="text" id="mail" name="Mail" placeholder="Votre e-mail">
+        </div>
+
+        <div id="num5">
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="Age" placeholder="Votre âge" minlength="2" maxlength="2">
+        </div>
+        
+        <div id="num6">
+          <label for="submit">Numéro de téléphone:</label>
+          <input type="text" id="tel" name="Telephone" placeholder="Votre numéro de téléphone" minlength="8" maxlength="10">
+        </div>
+
+        <div id="num7">
+          <label for="Insérer votre CV">Insérer votre CV</label>
+          <input type="file" accept=".doc, .pdf, .html" multiple/>
+        </div>
+
+        <textarea placeholder="Votre demande et/ou commentaire" rows="10" cols="282"></textarea>
+
+        <div>
+          <label for="Date de votre demande:">Date de votre demande:</label>
+          <input type="date"/>
+        </div>
+
+        <div id="newsletter">
+          <label for="S'inscrire à la newsletter ?">S'inscrire à la newsletter ?</label>
+          <input type="radio" id="v1" name="yes" value="1"/>
+          <label for="v1">Accepter</label>
+          <input type="radio" id="v2" name="no" value="2"/>
+          <label for="v2">Refuser</label>
+        </div>
+          
+        <div>
+          <label for="Comment vous nous avez connu ?">Comment vous nous avez connu ?</label>
+          <select id="choix"> 
+            <option value="1">Réseaux sociaux</option>
+            <option value="2">Via une connaissance</option>
+            <option value="3">Via la publicité</option>
+            <option value="4">Via les portes ouvertes et salons</option>
+          </select>
+              
+          <form method="post" action="exercice_form.html">
+            <input type="submit" value="Envoyer" id="ok1"/>
+          </form>
+              
+          <form method="post" action="exercice_form.html">
+            <input type="submit" value="Annuler" id="ok2"/>
+          </form>
+        </div>
+      </form>
+    </fieldset>
+    
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9726.180481682783!2d1.4916711167379777!3d43.552155127134135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdd63de81871%3A0x6c14cda58609eb63!2sADRAR%20Formation%20-%20P%C3%B4le%20NUMERIQUE!5e0!3m2!1sfr!2sfr!4v1638282944150!5m2!1sfr!2sfr" 
+      width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
+    </div>
+
+    <footer>
+      <button><a href="https://www.adrar-formation.com/mentions-legales">Mentions légales</a></button>
+      <button><a href="https://www.adrar-formation.com/politique-de-protection-des-donnees">Vie privée</a></button>
+      <button><a href="https://www.adrar-formation.com/content/conditions-g%C3%A9n%C3%A9rales-de-vente">Conditions Générales de Vente</a></button>
+      <button><a href="https://www.adrar-formation.com/content/nos-engagements-notre-politique-nos-objectifs-et-nos-indicateurs-pour-r%C3%A9ussir">Engagements, Politique, Objectifs, Indicateurs pour Réussir</a></button>
+    </footer>
+  </body>
 </html>
