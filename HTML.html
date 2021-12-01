@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="tp.css">
         <title>Le HTML</title>
     </head>
-    <body>
 
-<!--tête de page-->
+    <body>
         <header>
             <img src="IMG/html_logo.png" alt="Une image de HTML" width="175px" height="175px">
             <nav>
@@ -22,66 +21,90 @@
                 </ul>
             </nav>
         </header>
+        
         <h1>HyperText Markup Langage</h1>
 
-<!--images & vidéos-->
-<div id="container">
-    <div>
-        <h2>C'est quoi le HTML ?</h2>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <main class="testimonial-grid">
+            
+            <div class="testimonial">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/pQN-pnXPaVg" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-        <img src="IMG/html_img1.jpg" alt="Exemple en HTML" width="720px" height="480px">
+            <article class="testimonial">
+                <h2>En quelques mots...</h2>
+                <p>
+                    L'HyperText Markup Language, HTML, désigne un type de langage informatique 
+                    descriptif. Il s'agit plus précisément d'un format de données utilisé dans 
+                    l'univers d'Internet pour la mise en forme des pages Web. Il permet, entre autres, 
+                    d'écrire de l'hypertexte, mais aussi d'introduire des ressources multimédias dans 
+                    un contenu.
+                </p>
+            </article>
 
-        <img src="IMG/html_img2.jpg" alt="Un logo HTML" width="720px" height="480px">
-    </div>
+            <div  class="testimonial">
+                <img src="IMG/html_img1.jpg" alt="Exemple en HTML" width="720px" height="480px">
+            </div>
 
-<!--texte-->
-    <div>
-        <h2>En quelques mots...</h2>
-        <p>
-            L'HyperText Markup Language, HTML, désigne un type de langage informatique 
-            descriptif. Il s'agit plus précisément d'un format de données utilisé dans 
-            l'univers d'Internet pour la mise en forme des pages Web. Il permet, entre autres, 
-            d'écrire de l'hypertexte, mais aussi d'introduire des ressources multimédias dans 
-            un contenu.
-        </p>
-        <p>
-            Ce n'est pas à proprement parlé un langage de programmation, mais plutôt un langage 
-            qui permet de mettre en forme du contenu. Les balises permettent de mettre en forme 
-            le texte et de placer des éléments interactif, tel des liens, des images ou bien encore 
-            des animations. Ces éléments ne sont pas dans le code source d'une page codé en HTML 
-            mais "à coté" et la page en HTML ne fait que reprendre ces éléments.
-            Pour visualiser une page en HTML il est nécessaire d'utiliser un navigateur web.
-        </p>
-        <p>
-            La plupart du temps d'autres langages informatique sont associé à une page codé en HTML. 
-            Par exemple le CSS, qui permet de mettre en forme le contenu d'une page codé en HTML. 
-            Il y a également des langage informatique qui dépendent entièrement du HTML, 
-            tel le Javascript.
-        </p>
-    </div>
-    <div>
-        <h2>HTML 5</h2>
-        <p>
-            Aujourd'hui, nous en sommes à la version 5 (HTML5) qui introduit de nouvelles balises, 
-            de nouvelles API et de nouveaux attributs, permettant d'étendre le langage HTML au-delà 
-            de ses fonctions de base. Elle nécessite notamment un « DOCTYPE » qui permet d'indiquer 
-            au navigateur la méthode de rendu à appliquer pour afficher la page. Revers de 
-            la médaille, le HTML5 rend beaucoup plus complexe l'intervention dans le code 
-            d’une page, car il fait souvent appel à d'autres fichiers.
-        </p>
-    </div>
-    <div>
-        <h2>Quelques exemples en HTML</h2>
-        <img src="IMG/exmple_html1.PNG" alt="Du code HTML">
-        <img src="IMG/exemple_html11.PNG" alt="Le résultat sur un navigateur">
+            <article  class="testimonial">
+                <p>
+                    Ce n'est pas à proprement parlé un langage de programmation, mais plutôt un langage 
+                    qui permet de mettre en forme du contenu. Les balises permettent de mettre en forme 
+                    le texte et de placer des éléments interactif, tel des liens, des images ou bien encore 
+                    des animations. Ces éléments ne sont pas dans le code source d'une page codé en HTML 
+                    mais "à coté" et la page en HTML ne fait que reprendre ces éléments.
+                    Pour visualiser une page en HTML il est nécessaire d'utiliser un navigateur web.
+                </p>
+            </article>
 
-        <img src="IMG/exemple_html2.PNG" alt="Du code HTML">
-        <img src="IMG/exemple_html22.PNG" alt="Le résultat sur un navigateur">
-    </div>
+            <div  class="testimonial">
+                <img src="IMG/html_img2.jpg" alt="Un logo HTML" width="720px" height="480px">
+            </div>
+
+            <article  class="testimonial">
+                <p>
+                    La plupart du temps d'autres langages informatique sont associé à une page codé en HTML. 
+                    Par exemple le CSS, qui permet de mettre en forme le contenu d'une page codé en HTML. 
+                    Il y a également des langage informatique qui dépendent entièrement du HTML, 
+                    tel le Javascript.
+                </p>
+            </article>
+
+            <article  class="testimonial">
+                <h2>HTML 5</h2>
+                <p>
+                Aujourd'hui, nous en sommes à la version 5 (HTML5) qui introduit de nouvelles balises, 
+                de nouvelles API et de nouveaux attributs, permettant d'étendre le langage HTML au-delà 
+                de ses fonctions de base. Elle nécessite notamment un « DOCTYPE » qui permet d'indiquer 
+                au navigateur la méthode de rendu à appliquer pour afficher la page. Revers de 
+                la médaille, le HTML5 rend beaucoup plus complexe l'intervention dans le code 
+                d’une page, car il fait souvent appel à d'autres fichiers.
+                </p>
+            </article>
+
+            <div  class="testimonial">
+                <h2>Quelques exemples en HTML</h2>
+            </div>
+
+            <div class="testimonial">
+                <img src="IMG/exmple_html1.PNG" alt="Du code HTML">
+                <img src="IMG/exemple_html11.PNG" alt="Le résultat sur un navigateur">
+            </div>
+
+            <div class="testimonial">
+                <img src="IMG/exemple_html2.PNG" alt="Du code HTML">
+                <img src="IMG/exemple_html22.PNG" alt="Le résultat sur un navigateur">
+            </div>
+
+        </main>
+    </body>
 
 
-<!--pied de page-->
+
 <footer>
     <button><a href="https://www.adrar-formation.com/mentions-legales">Mentions légales</a></button>
     <button><a href="https://www.adrar-formation.com/politique-de-protection-des-donnees">Vie privée</a></button>

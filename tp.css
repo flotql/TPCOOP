@@ -1,3 +1,27 @@
+/*
+***************************************************
+Notes :
+
+Attention, double config grid :
+
+- class = "container" 
+    pour la page d'Accueil (index.html)
+
+- class = "testimonial-grid" et "testimonial"
+    pour les pages :
+                    HTML.html, 
+                    CSS.html, 
+                    JS.html 
+                    API.html
+***************************************************
+*/
+
+/*
+****
+INIT
+****
+*/
+
 :root{
     --main-color1: #333333;
     --main-color2: #f1f1f1;
@@ -6,8 +30,10 @@
     --side-color2: #C0C0C0;
     
     --accent-color: #337AB7;
-    --font-size-normal:1.8em;   /* h2 */
-    --font-size-accent: 5em;  /* h1 */
+
+    --font-size-small: 1em; /* texte */
+    --font-size-normal: 1.8em;   /* h2 */
+    --font-size-accent: 4em;  /* h1 */
 }
 
 *{
@@ -23,7 +49,8 @@ body{
 }
 
 body img{
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 iframe{
@@ -52,6 +79,12 @@ header{
     
 }
 
+/*
+**********************************************
+Attention, partie header sous ce commentaire !
+**********************************************
+*/
+
 /* LOGO */
 header img{
     display: flex;
@@ -74,15 +107,16 @@ nav{
 
 nav ul{
     list-style-type: none;
+    background-color: var(--main-color1);
 }
 
 nav ul li{
     font-size: var(--font-size-normal);
+    
     display: inline;
     position: relative;
     transition: all .5s;
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 0.5em;
 
 }
 
@@ -92,13 +126,18 @@ nav ul li a{
     color:#C0C0C0;
 }
 
+/* Effet zoom au passage de la souris sur le menu*/
 nav ul li:hover{
     font-size: 1.9em;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding: 1.2em;
 }
 
-/* Formulaire */
+/*
+********************************************
+Attention, partie form sous ce commentaire ! 
+********************************************
+*/
+
 fieldset {
     margin:20px;
     
@@ -137,27 +176,129 @@ form + div iframe{
 
 /*
 **********************************************
-Attention que les .class sous ce commentaire !
+Attention, partie Footer sous ce commentaire !
 **********************************************
-*/
+/* 
 
+/*Footer */
 footer{
     width: 100%;
 }
 
+/* Fix Footer wrong position */
 .container, footer{
     display: flex;
     flex-direction: column;
 }
 
+/*
+****************************************************************************************
+Attention, initialisation class container pour grid page d'accueil sous ce commentaire !
+****************************************************************************************
+*/
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    
 }
 
-/* LIEN PAGE D'ACCUEIL */
+/*
+**********************************************************************************
+Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire !
+**********************************************************************************
+*/
+
+/* Config grid */
+.testimonial-grid{
+    display: grid;
+    /* gap: 1.5rem; -> pb compatibilité gap avec chrome */
+    grid-auto-columns: 1fr; /* Permet d'avoir des colonnes égales */
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six'
+    'seven'
+    'height'
+    'nine'
+    'ten';
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+/* Eléments du grid */
+.testimonial{
+    font-size: var(--font-size-small);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.testimonial h2{
+    font-size: var(--font-size-normal);
+}
+
+/* Assignation zones aux élément du grid */
+.testimonial:nth-child(1){
+    grid-area: one;
+}
+.testimonial:nth-child(2){
+    grid-area: two;
+}
+.testimonial:nth-child(3){
+    grid-area: three;
+}
+.testimonial:nth-child(4){
+    grid-area: four;
+}
+.testimonial:nth-child(5){
+    grid-area: five;
+}
+.testimonial:nth-child(6){
+    grid-area: six;
+}
+.testimonial:nth-child(7){
+    grid-area: seven;
+}
+.testimonial:nth-child(8){
+    grid-area: height;
+}
+.testimonial:nth-child(9){
+    grid-area: nine;
+}
+
+/* @media du grid */
+@media (min-width: 40em) {
+    .testimonial-grid {
+        grid-template-areas: 
+        'one one'
+        'two three'
+        'four five'
+        'six seven'
+        'height height'
+        'nine ten';
+    }
+}
+
+@media (min-width: 50em) {
+    .testimonial-grid {
+        grid-template-areas: 
+        'one one two'
+        'three four four'
+        'five six seven'
+        'height nine ten';
+    }
+}
+
+/*
+*******************************************************************
+Attention, config page d'accueil (index.html) sous ce commentaire !
+*******************************************************************
+*/
+/* Lien avec  image */
 .img_link{
     display: flex;
     justify-content: center;
@@ -166,33 +307,19 @@ footer{
     padding: 10px;
     margin: 2em;
     
-
     border: solid 1em var(--accent-color);
-    border-radius: 3em;
+    border-radius: 50px;   
 }
 
+/* Effet au passage de la souris */
 .img_link:hover{
     background-color: var(--accent-color);
 }
 
 /* 
-**********************************************
-Attention que les ID sous ce commentaire !
-**********************************************
-*/
-
-
-#container div{
-    border: solid 2px #333333;
-    width: 30%;
-    height: 10%;
-    margin-bottom: 10px;
-}
-
-/* 
-**********************************************
-Attention que les @media sous ce commentaire !
-**********************************************
+********************************************************************************
+Attention, config des @media du grid de la page html index sous ce commentaire !
+********************************************************************************
 */
 
 @media screen and (width < 1000px){
@@ -212,8 +339,8 @@ Attention que les @media sous ce commentaire !
     }
     
     .img_link{
-        width: 40%;
-        height: 40%;
+        width: 50%;
+        height: 50%;
         
     }
 }

@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="tp.css">
         <title>JS</title>
     </head>
-    <body>
 
-<!-- HEADER -->
+    <body>
 
         <header>
             <img src="./IMG/logoadrar.png" alt="Logo Adrar">
@@ -24,32 +23,61 @@
             </nav>
         </header>
 
-<!-- CONTAINER -->
+        <h1>JavaScript</h1>
 
-        <div id="container">
-            <h1>JavaScript</h1>
-            <h2>Présentation</h2>
-            <div><iframe width="1271" height="715" src="https://www.youtube.com/embed/EeGWIJgAi70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div><p>
-                JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué.
-            </p></div>
-            <h2>Comment fonctionne JavaScript</h2>
-            <img src="./IMG/JSimg2pg.png" alt="imgJS">
-            <div><p>
-                Javascript fonctionne à l'aide de Variables (myVariable = 'Bob';), d'opérateurs (+,=,...), fonctions (let myVariable = document.querySelector('h1');)
-            </p></div>
-            <h2>Exemple</h2>
-            <div><p>                  
-                <h3>What Can JavaScript Do?</h3>                    
-                <p id="demo">JavaScript can change the style of an HTML element.</p>                    
-                <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>                
-            </p></div>
-            <div><p>
+        <main class="testimonial-grid">
+            
+            <div class="testimonial">
+                <iframe width="1271" height="715" src="https://www.youtube.com/embed/EeGWIJgAi70" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <article class="testimonial">
+                <h2>Présentation</h2>
+                <p>
+                    JavaScript est un langage de programmation qui permet d'implémenter des mécanismes 
+                    complexes sur une page web. À chaque fois qu'une page web fait plus que simplement 
+                    afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, 
+                    des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, 
+                    JavaScript a de bonnes chances d'être impliqué.
+                </p>
+            </article>
+
+            <div class="testimonial">
+                <img src="./IMG/JSimg2pg.png" alt="imgJS">
+            </div>
+
+            <article class="testimonial">
+                <h2>Comment fonctionne JavaScript</h2>
+                <p>
+                    Javascript fonctionne à l'aide de Variables (myVariable = 'Bob';), d'opérateurs (+,=,...), 
+                    fonctions (let myVariable = document.querySelector('h1');)
+                </p>
+            </article>
+
+            <article class="testimonial">
+                <h2>Exemple</h2>
+                <h3>What Can JavaScript Do?</h3>                                      
+                    <p id="demo">
+                        JavaScript can change the style of an HTML element.
+                    </p>                    
+                    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+            </article>
+
+            <article class="testimonial">
                 <h3>What else?</h3>
-                <p id="demo2">JavaScript can change HTML content.</p>
+                <p id="demo2">
+                    JavaScript can change HTML content.
+                </p>
                 <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-            </p></div>
-        </div>
+            </article>
+
+        </main>
+
         <footer>
             <button><a href="https://www.adrar-formation.com/mentions-legales">Mentions légales</a></button>
             <button><a href="https://www.adrar-formation.com/politique-de-protection-des-donnees">Vie privée</a></button>
