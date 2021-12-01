@@ -43,9 +43,9 @@ INIT
 }
 
 body{
+    background-color: var(--main-color2);
     width: 100%;
     height: 100%;
-    background-color: var(--main-color2);
 }
 
 body img{
@@ -59,8 +59,8 @@ iframe{
 }
 
 h1{
-    color: var(--accent-color);
     text-align: center;
+    color: var(--accent-color);
     font-size: var(--font-size-accent);
 }
 
@@ -84,7 +84,6 @@ header{
     top: 0;
     
     color: var(--main-color2);
-    
 }
 
 #backtotop{
@@ -100,9 +99,9 @@ header{
 }
 
 .img_bg{
+    background-color: var(--side-color2);
     border: solid 2px var(--accent-color);
     border-radius: 4px;
-    background-color: var(--side-color2);
 }
 
 /*
@@ -117,6 +116,7 @@ header img{
     position: sticky;
     top: 0;
     left: 0;
+
     max-width: 100px;
     max-height: 100px;
 }
@@ -124,8 +124,8 @@ header img{
 
 /* Partie Nav */
 nav{
-    background-color: var(--main-color1);
     text-align: center;
+    background-color: var(--main-color1);
     font-size: 24px;
     width: 100%;
     height: 50px;
@@ -137,17 +137,15 @@ nav ul{
 }
 
 nav ul li{
-    font-size: var(--font-size-small);
-    
     display: inline;
     position: relative;
     transition: all .5s;
-    padding: 0.5em;
 
+    font-size: var(--font-size-small);
+    padding: 0.5em;
 }
 
 nav ul li a{
-
     text-decoration: none;
     color:#C0C0C0;
 }
@@ -155,6 +153,7 @@ nav ul li a{
 /* Effet zoom au passage de la souris sur le menu*/
 nav ul li:hover{
     transform: scale(1.4);
+
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -191,7 +190,8 @@ textarea{
 
 fieldset + div iframe{
     display: flex;
-    margin:auto
+
+    margin: auto;
 }
 
 /*
@@ -223,10 +223,11 @@ Attention, initialisation class container pour grid page d'accueil sous ce comme
 }
 
 .img_size{
-    width: auto;
-    height: auto;
     justify-self: center;
     align-self: center;
+
+    width: auto;
+    height: auto;
 }
 
 /*
@@ -327,9 +328,8 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
     }
 
     .img_link{
-        
-        height: 300px;
         width: 80%;
+        height: 300px;
     }
 }
 
@@ -351,7 +351,6 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
     .container{
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
-
     }
 
     h2{
@@ -360,8 +359,7 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
     
     .img_link{
         width: 50%;
-        height: 50%;
-        
+        height: 50%; 
     }
 }
 
