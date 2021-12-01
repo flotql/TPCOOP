@@ -200,7 +200,7 @@ Attention, initialisation class container pour grid page d'accueil sous ce comme
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 /*
@@ -272,7 +272,8 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
 }
 
 /* @media du grid */
-@media (min-width: 40em) {
+@media (min-width: 60em) {
+    /* Config @media grid page html autre que index */
     .testimonial-grid {
         grid-template-areas: 
         'one one'
@@ -282,15 +283,51 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
         'height height'
         'nine ten';
     }
+
+    /* config @media grid index */
+    .container{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+           
+    }
+    
+    .img_link img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .img_link{
+        
+        height: 300px;
+        width: 80%;
+    }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
+    /* Config @media grid page html autre que index */
     .testimonial-grid {
         grid-template-areas: 
         'one one two'
         'three four four'
         'five six seven'
         'height nine ten';
+    }
+
+    /* config @media grid index */
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    h2{
+        grid-column: 1 / span(2);
+    }
+    
+    .img_link{
+        width: 50%;
+        height: 50%;
+        
     }
 }
 
@@ -315,56 +352,4 @@ Attention, config page d'accueil (index.html) sous ce commentaire !
 /* Effet au passage de la souris */
 .img_link:hover{
     background-color: var(--accent-color);
-}
-
-/* 
-********************************************************************************
-Attention, config des @media du grid de la page html index sous ce commentaire !
-********************************************************************************
-*/
-
-@media screen and (width < 1000px){
-    h1{
-        color: red;
-    }
-    .container{
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-
-    }
-
-    
-
-    h2{
-        grid-column: 1 / span(2);
-    }
-    
-    .img_link{
-        width: 50%;
-        height: 50%;
-        
-    }
-}
-
-@media screen and (width < 900px){
-    h1{
-        color: green;
-    }
-    .container{
-        grid-template-columns: 1fr;
-        justify-items: center;
-           
-    }
-    
-    .img_link img{
-        max-width: 200px;
-        max-height: 200px;
-    }
-
-    .img_link{
-        
-        height: 300px;
-        width: 80%;
-    }
-    
 }
