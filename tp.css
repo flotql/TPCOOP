@@ -119,7 +119,7 @@ nav ul{
 }
 
 nav ul li{
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-small);
     
     display: inline;
     position: relative;
@@ -136,8 +136,9 @@ nav ul li a{
 
 /* Effet zoom au passage de la souris sur le menu*/
 nav ul li:hover{
-    font-size: 1.9em;
-    padding: 1.2em;
+    transform: scale(1.4);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*
@@ -284,6 +285,10 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
         'nine ten';
     }
 
+    nav ul li{
+        font-size: var(--font-size-small);
+    }
+
     /* config @media grid index */
     .container{
         grid-template-columns: 1fr 1fr;
@@ -313,8 +318,8 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
         'height nine ten';
     }
 
-    nav h2{
-        font-size: var(--font-size-small);
+    nav ul li{
+        font-size: var(--font-size-normal);
     }
 
     /* config @media grid index */
