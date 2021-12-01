@@ -189,12 +189,6 @@ textarea{
     margin-top: 10px;
 }
 
-fieldset + div iframe{
-    display: flex;
-
-    margin: auto;
-}
-
 /*
 **********************************************
 Attention, partie Footer sous ce commentaire !
