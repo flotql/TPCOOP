@@ -54,8 +54,12 @@ body img{
 }
 
 iframe{
-    max-width: 640px;
-    max-height: 360px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    
 }
 
 h1{
@@ -180,7 +184,7 @@ label{
 
 textarea{
     width: 90%;
-    margin:0;
+    margin: 0;
 }
 
 #ok1, #ok2{
@@ -315,6 +319,11 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
         font-size: var(--font-size-small);
     }
 
+    iframe{
+        max-width: 100%;
+        max-height: 80%;        
+    }
+
     /* config @media grid index */
     .container{
         grid-template-columns: 1fr 1fr;
@@ -345,6 +354,10 @@ Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire
 
     nav ul li{
         font-size: var(--font-size-normal);
+    }
+
+    iframe{
+        width: 100%;      
     }
 
     /* config @media grid index */
