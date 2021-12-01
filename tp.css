@@ -108,6 +108,14 @@ header{
     border-radius: 4px;
 }
 
+.img_size{
+    justify-self: center;
+    align-self: center;
+
+    width: auto;
+    height: auto;
+}
+
 /*
 **********************************************
 Attention, partie header sous ce commentaire !
@@ -215,14 +223,6 @@ Attention, initialisation class container pour grid page d'accueil sous ce comme
 .container{
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.img_size{
-    justify-self: center;
-    align-self: center;
-
-    width: auto;
-    height: auto;
 }
 
 /*
