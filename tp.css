@@ -204,6 +204,13 @@ Attention, initialisation class container pour grid page d'accueil sous ce comme
     grid-template-columns: 1fr;
 }
 
+.img_size{
+    width: auto;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
 /*
 **********************************************************************************
 Attention, config grid des pages html : HTML, CSS, JS et API sous ce commentaire !
